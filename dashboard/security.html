@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security - WebTech Practice</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+  <header class="dash-topbar">
+    <div class="user-info">
+      <div class="avatar">DU</div>
+      <div>
+        <p class="user-name">Demo User</p>
+        <p class="user-email">demo@webtech.practice</p>
+      </div>
+    </div>
+    <h2 class="dash-title">WebTech Practice Dashboard</h2>
+  </header>
+
+  <div class="dash-layout">
+
+    <aside class="sidebar">
+      <p class="sidebar-heading">DASHBOARD</p>
+      <nav>
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="profile.html">Profile Settings</a></li>
+          <li><a href="security.html" class="active">Security</a></li>
+          <li><a href="notifications.html">Notification</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-heading">QUICK ACTION</p>
+      <nav>
+        <ul>
+          <li><a href="help.html">Help &amp; Support</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-heading">ACCOUNT</p>
+      <nav>
+        <ul>
+          <li><a href="../login.html">Sign out</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="dash-main">
+      <section class="form-card">
+        <h3>Security Settings</h3>
+
+        <h4>Security Settings</h4>
+        <p class="section-desc">Keep your account secure by using a strong password and changing it regularly.</p>
+
+        <form>
+          <div class="form-row-split">
+            <div>
+              <label for="currentpass">Current Password</label>
+              <input type="password" id="currentpass" name="currentpass" placeholder="Enter current password">
+            </div>
+            <div>
+              <label for="newpass">New Password</label>
+              <input type="password" id="newpass" name="newpass" placeholder="Minimum 6 characters">
+            </div>
+          </div>
+
+          <label for="confirmpass">Confirm New Password</label>
+          <input type="password" id="confirmpass" name="confirmpass" placeholder="Re-enter new password">
+
+          <div class="form-buttons">
+            <button type="reset" class="btn-secondary">Clear</button>
+            <button type="submit" class="btn-primary">Update Password</button>
+          </div>
+        </form>
+
+        <hr>
+
+        <h4>Security Information</h4>
+        <div class="info-grid">
+          <div class="info-card">
+            <h5>Account Created</h5>
+            <p>8/31/2025</p>
+          </div>
+          <div class="info-card">
+            <h5>Last Updated</h5>
+            <p>Never updated</p>
+          </div>
+          <div class="info-card">
+            <h5>Session</h5>
+            <p>Current browser session active</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

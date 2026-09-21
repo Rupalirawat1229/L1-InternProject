@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Common Buttons */
+.btn-primary {
+  background-color: #2dd4bf;
+  color: #06213f;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #26bfa9;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #cbd5e1;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+}
+
+.btn-link {
+  color: #1a1a1a;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Section common spacing */
+section {
+  padding: 60px 40px;
+}
+
+h1, h2, h3, h4 {
+  color: #0b1f3a;
+}
+
+/* Common Form Elements */
+form label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #f1f5f9;
+  font-size: 14px;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2dd4bf;
+  background-color: #ffffff;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.form-row-split {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row-split > div {
+  flex: 1;
+}

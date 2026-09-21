@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Settings - WebTech Practice</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+  <header class="dash-topbar">
+    <div class="user-info">
+      <div class="avatar">DU</div>
+      <div>
+        <p class="user-name">Demo User</p>
+        <p class="user-email">demo@webtech.practice</p>
+      </div>
+    </div>
+    <h2 class="dash-title">WebTech Practice Dashboard</h2>
+  </header>
+
+  <div class="dash-layout">
+
+    <aside class="sidebar">
+      <p class="sidebar-heading">DASHBOARD</p>
+      <nav>
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="profile.html" class="active">Profile Settings</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="notifications.html">Notification</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-heading">QUICK ACTION</p>
+      <nav>
+        <ul>
+          <li><a href="help.html">Help &amp; Support</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-heading">ACCOUNT</p>
+      <nav>
+        <ul>
+          <li><a href="../login.html">Sign out</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="dash-main">
+      <section class="form-card">
+        <h3>Profile Settings</h3>
+
+        <form>
+          <h4>Personal Information</h4>
+
+          <div class="form-row-split">
+            <div>
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" value="Demo User">
+            </div>
+            <div>
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob">
+            </div>
+          </div>
+
+          <div class="form-row-split">
+            <div>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" value="demo@gmail.com">
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 9876543210">
+            </div>
+          </div>
+
+          <h4>Address Information</h4>
+
+          <label for="address">Street Address</label>
+          <textarea id="address" name="address" placeholder="Enter your complete address"></textarea>
+
+          <div class="form-row-split">
+            <div>
+              <label for="pincode">PIN Code</label>
+              <input type="text" id="pincode" name="pincode" placeholder="123456">
+            </div>
+            <div>
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Ranchi">
+            </div>
+          </div>
+
+          <div class="form-row-split">
+            <div>
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" placeholder="India">
+            </div>
+            <div>
+              <label for="github">GitHub Profile</label>
+              <input type="url" id="github" name="github" placeholder="https://github.com/username">
+            </div>
+          </div>
+
+          <div class="form-buttons">
+            <button type="reset" class="btn-secondary">Cancel changes</button>
+            <button type="submit" class="btn-primary">Save changes</button>
+          </div>

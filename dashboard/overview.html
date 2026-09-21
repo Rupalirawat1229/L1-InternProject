@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Overview - WebTech Practice</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="dash-topbar">
+    <div class="user-info">
+      <div class="avatar">DU</div>
+      <div>
+        <p class="user-name">Demo User</p>
+        <p class="user-email">demo@webtech.practice</p>
+      </div>
+    </div>
+    <h2 class="dash-title">WebTech Practice Dashboard</h2>
+  </header>
+
+  <div class="dash-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <p class="sidebar-heading">DASHBOARD</p>
+      <nav>
+        <ul>
+          <li><a href="overview.html" class="active">Overview</a></li>
+          <li><a href="profile.html">Profile Settings</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="notifications.html">Notification</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-heading">QUICK ACTION</p>
+      <nav>
+        <ul>
+          <li><a href="help.html">Help &amp; Support</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-heading">ACCOUNT</p>
+      <nav>
+        <ul>
+          <li><a href="../login.html">Sign out</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="dash-main">
+      <section class="welcome-card">
+        <h3>Welcome back, Demo User</h3>
+        <p>Manage your profile settings and account preferences. Your data is securely stored in your browser's localStorage.</p>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <h4>Theme</h4>
+            <p>Dark/Light mode persisted across all pages</p>
+          </div>
+          <div class="stat-card">
+            <h4>Authentication</h4>
+            <p>Secure session stored in browser storage</p>
+          </div>
+          <div class="stat-card">
+            <h4>Profile</h4>
+            <p>20% profile completed (1/5 fields)</p>
+          </div>
+          <div class="stat-card">
+            <h4>Security</h4>
+            <p>Password protection and account security</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-actions">
+        <h3>Quick Actions</h3>
+        <div class="action-grid">
+          <a href="profile.html" class="action-card">
+            <h4>Edit Profile</h4>
+            <p>Update your personal information</p>
+          </a>
+          <a href="security.html" class="action-card">
+            <h4>Change Password</h4>
+            <p>Update your Account security</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

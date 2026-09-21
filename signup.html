@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - WebTech Practice</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <div class="auth-card">
+    <h1>Create your account</h1>
+    <p class="subtitle">Sign up to access the practice dashboard.</p>
+
+    <form>
+      <div class="form-row-split">
+        <div>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" placeholder="Enter First Name" required>
+        </div>
+        <div>
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required>
+        </div>
+      </div>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <div class="form-row-split">
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        </div>
+        <div>
+          <label for="cpassword">Confirm Password:</label>
+          <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required>
+        </div>
+      </div>
+      <p class="hint">Use at least 8 characters, with letter &amp; number</p>
+
+      <label class="checkbox-label">
+        <input type="checkbox" name="terms" required>
+        I agree to the Terms
+      </label>
+
+      <button type="submit" class="btn-primary">Create Account</button>
+    </form>
+
+    <p class="switch-text">Already have account? <a href="login.html">Sign in</a></p>
+  </div>
+
+</body>
+</html>

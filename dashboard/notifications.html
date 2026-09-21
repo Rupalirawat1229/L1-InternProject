@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - WebTech Practice</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+  <header class="dash-topbar">
+    <div class="user-info">
+      <div class="avatar">DU</div>
+      <div>
+        <p class="user-name">Demo User</p>
+        <p class="user-email">demo@webtech.practice</p>
+      </div>
+    </div>
+    <h2 class="dash-title">WebTech Practice Dashboard</h2>
+  </header>
+
+  <div class="dash-layout">
+
+    <aside class="sidebar">
+      <p class="sidebar-heading">DASHBOARD</p>
+      <nav>
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="profile.html">Profile Settings</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="notifications.html" class="active">Notification</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-heading">QUICK ACTION</p>
+      <nav>
+        <ul>
+          <li><a href="help.html">Help &amp; Support</a></li>
+        </ul>
+      </nav>
+
+      <p class="sidebar-heading">ACCOUNT</p>
+      <nav>
+        <ul>
+          <li><a href="../login.html">Sign out</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="dash-main">
+      <section class="form-card">
+        <h3>Notifications</h3>
+
+        <h4>🔔 Notification Preferences</h4>
+        <p class="section-desc"><a href="#">Manage how and when you receive notifications about your account activity.</a></p>
+
+        <div class="pref-grid">
+          <div class="pref-card">
+            <h5>✉️ Email Notifications</h5>
+            <p>Receive important updates via email</p>
+            <label class="checkbox-label">
+              <input type="checkbox" checked>
+              Enable email notifications
+            </label>
+          </div>
+          <div class="pref-card">
+            <h5>🔒 Security Alerts</h5>
+            <p>Get notified about security changes</p>
+            <label class="checkbox-label">
+              <input type="checkbox" checked>
+              Enable security alerts
+            </label>
+          </div>
+        </div>
+
+        <h4>Recent Activity</h4>
+        <div class="activity-card">
+          <label class="checkbox-label">
+            <input type="checkbox" checked>
+          </label>
+          <div>
+            <h5>Profile Updated</h5>
+            <p>Your profile information was successfully updated</p>
+            <span class="activity-time">Today</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>
