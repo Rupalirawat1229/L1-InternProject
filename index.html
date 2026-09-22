@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebTech Practice</title>
-  <!--i am using external stylesheet for link--->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/landing.css">
-  
 </head>
 <body>
 
@@ -18,7 +16,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#theme">Theme</a></li>
+        <li><button id="themeToggle" class="theme-btn">Theme</button></li>
         <li><a href="login.html">Login</a></li>
         <li><a href="signup.html" class="btn-primary">Sign Up</a></li>
       </ul>
@@ -44,18 +42,22 @@
     <div class="hero-right">
       <div class="preview-card">
         <button class="arrow-left">&#8592;</button>
-        <div class="preview-content">
+
+        <div class="preview-content active" data-slide="0">
           <h3>Complete Auth Flow</h3>
-          <p>
-            Beautiful dark/light mode with smooth transitions,
-            persisted across all pages and sessions.
-          </p>
+          <p>Beautiful dark/light mode with smooth transitions, persisted across all pages and sessions.</p>
         </div>
+
+        <div class="preview-content" data-slide="1">
+          <h3>Complete Auth Flow-2</h3>
+          <p>Beautiful dark/light mode with smooth transitions, persisted across all pages and sessions.</p>
+        </div>
+
         <button class="arrow-right">&#8594;</button>
+
         <div class="dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <span class="dot active" data-dot="0"></span>
+          <span class="dot" data-dot="1"></span>
         </div>
       </div>
     </div>
@@ -119,12 +121,14 @@
       <ul class="footer-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#theme">Theme</a></li>
         <li><a href="login.html">Login</a></li>
         <li><a href="signup.html">Sign Up</a></li>
       </ul>
     </nav>
   </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/landing.js"></script>
 
 </body>
 </html>

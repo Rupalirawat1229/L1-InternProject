@@ -75,6 +75,15 @@
   text-align: center;
 }
 
+/* Carousel slides */
+.preview-content {
+  display: none;
+}
+
+.preview-content.active {
+  display: block;
+}
+
 .preview-content h3 {
   margin-bottom: 10px;
 }
@@ -110,6 +119,11 @@
   border-radius: 50%;
   background-color: #d1d5db;
   display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #2dd4bf;
 }
 
 /* About Section */
